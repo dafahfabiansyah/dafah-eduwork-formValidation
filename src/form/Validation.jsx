@@ -1,6 +1,6 @@
 import React from 'react';
-import * as Validator from 'validatorjs';
-// import ShowError from './ShowError';
+// import * as Validator from 'validatorjs';
+import ShowError from './ShowError';
 
 const Input = ({ label, type, name, onChange }) => {
   return (
@@ -13,15 +13,15 @@ const Input = ({ label, type, name, onChange }) => {
   );
 };
 
-const ShowError = ({ errors }) => {
-  return (
-    <ul style={{ color: 'red' }}>
-      {errors.map((error, i) => (
-        <li key={i}>{error}</li>
-      ))}
-    </ul>
-  );
-};
+// const ShowError = ({ errors }) => {
+//   return (
+//     <ul style={{ color: 'red' }}>
+//       {errors.map((error, i) => (
+//         <li key={i}>{error}</li>
+//       ))}
+//     </ul>
+//   );
+// };
 
 class Validation extends React.Component {
   state = {
